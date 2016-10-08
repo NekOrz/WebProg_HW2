@@ -1,18 +1,14 @@
-
-let count = 0;
-let Counter = {
-  count,
+let Counter = function f() {
+  let count;
+  return {
+    getCount() {
+      return count;
+    },
+    increase() {
+      count += 1;
+    },
+    decrease() {
+      count -= 1;
+    },
+  };
 };
-let Counter = {
-  getCount() {
-    return count;
-  },
-  increase() {
-    count += 1;
-  },
-  decrease() {
-    count -= 1;
-  },
-};
-
-let c = new Counter();
