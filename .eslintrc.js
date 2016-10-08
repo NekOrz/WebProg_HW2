@@ -4,5 +4,8 @@ module.exports = {
 		"react",
 		"jsx-a11y",
 		"import"
-	]
+	],
+	"rules": {
+		"brace-style": ["error", "stroustrup", {"allowSingleLine": true}]
+	}
 };
